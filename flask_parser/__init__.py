@@ -9,15 +9,16 @@ from flask import Flask
 # login_manager = LoginManager()
 # bcrypt = Bcrypt()
 # mail = Mail()
-app = Flask(__name__)
+#app = Flask(__name__)
 # app.config.from_object(Config)
-app.config.from_object(__name__)
-SECRET_KEY = b'\x143#\x1eV;\xc9\xa0\xecr\r\xd4/{b\n'
+#app.config.from_object(__name__)
+#SECRET_KEY = b'\x143#\x1eV;\xc9\xa0\xecr\r\xd4/{b\n'
 # config_class=Config
 def create_app():
     app = Flask(__name__)
+    #app.config.from_object(__name__)
     #app.config.from_object(Config)
-    app.config.from_object(__name__)
+    #app.config.from_object(__name__)
     #db.init_app(app)
     #login_manager.init_app(app)
     #bcrypt.init_app(app)
