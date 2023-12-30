@@ -16,6 +16,7 @@ from flask import Flask
 # config_class=Config
 def create_app():
     app = Flask(__name__)
+    app.config.from_object(__name__)
     #app.config.from_object(__name__)
     #app.config.from_object(Config)
     #app.config.from_object(__name__)

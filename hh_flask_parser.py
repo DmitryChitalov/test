@@ -57,4 +57,4 @@ if __name__ == "__main__":
 
 
     # Запустить Flask приложение
-    app.run()
+    app.run(debug=True)
