@@ -4,17 +4,12 @@ from hashlib import sha256, pbkdf2_hmac
 from os import urandom
 
 
-import sys
-import os
-import unittest
-import json
-sys.path.append(os.path.join(os.getcwd(), '..'))
-
 from flask import Blueprint, render_template, request, redirect, \
     flash, session
 
 from ..database import db_session
 from ..models import User
+
 
 auth_blueprint = Blueprint("auth", __name__)
 
