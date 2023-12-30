@@ -21,6 +21,7 @@ def create_app():
     #mail.init_app(app)
 
     from flask_parser.flask_parser.flask_parser import parser_blueprint
+    from flask_parser.authorization.auth import auth_blueprint
 
     #from flask_blog.main.routes import main
     #from flask_blog.users.routes import users
@@ -29,5 +30,6 @@ def create_app():
     #app.register_blueprint(users)
     #app.register_blueprint(posts)
     app.register_blueprint(parser_blueprint)
+    app.register_blueprint(auth_blueprint)
 
     return app
